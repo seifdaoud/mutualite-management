@@ -54,7 +54,7 @@ Ce projet est une application complète de gestion de mutuelle santé, développ
 #### **Backend**
 1. Clonez le projet :
    ```bash
-   git clone <votre-repository-git>
+   git clone https://github.com/seifdaoud/mutualite-management
    cd health-mutual-project/backend
    ```
 2. Configurez la base de données dans `application.properties` :
