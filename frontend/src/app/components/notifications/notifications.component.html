@@ -1,0 +1,7 @@
+<h2>Préférences de Notifications</h2>
+<form (ngSubmit)="sauvegarderPreferences()">
+  <label><input type="checkbox" [(ngModel)]="preferences.email" name="email" /> Email</label>
+  <label><input type="checkbox" [(ngModel)]="preferences.sms" name="sms" /> SMS</label>
+  <label><input type="checkbox" [(ngModel)]="preferences.push" name="push" /> Push</label>
+  <button type="submit">Enregistrer</button>
+</form>

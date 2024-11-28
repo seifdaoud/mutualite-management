@@ -1,0 +1,7 @@
+<h2>Rapports</h2>
+<ul>
+  <li *ngFor="let report of reports">
+    {{ report.title }} - Généré le {{ report.generatedAt }}
+    <button (click)="downloadReport(report.id)">Télécharger</button>
+  </li>
+</ul>

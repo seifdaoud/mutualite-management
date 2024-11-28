@@ -1,0 +1,11 @@
+<h2>Prédictions de Renouvellement</h2>
+<table>
+  <tr>
+    <th>Contrat</th>
+    <th>Probabilité</th>
+  </tr>
+  <tr *ngFor="let prediction of predictions">
+    <td>{{ prediction.contrat }}</td>
+    <td>{{ prediction.probabilite }}%</td>
+  </tr>
+</table>

@@ -1,0 +1,13 @@
+<h2>Liste des Factures</h2>
+<table>
+  <tr>
+    <th>Montant</th>
+    <th>Date</th>
+    <th>Payée</th>
+  </tr>
+  <tr *ngFor="let invoice of invoices">
+    <td>{{ invoice.montant }}</td>
+    <td>{{ invoice.dateFacture | date }}</td>
+    <td>{{ invoice.payee ? 'Oui' : 'Non' }}</td>
+  </tr>
+</table>

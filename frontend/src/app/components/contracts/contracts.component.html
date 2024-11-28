@@ -1,0 +1,15 @@
+<h2>Gestion des Contrats</h2>
+<table>
+  <tr>
+    <th>Numéro</th>
+    <th>Date Début</th>
+    <th>Date Fin</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let contract of contracts">
+    <td>{{ contract.numeroContrat }}</td>
+    <td>{{ contract.dateDebut | date }}</td>
+    <td>{{ contract.dateFin | date }}</td>
+    <td><button (click)="modifierContrat(contract.id)">Modifier</button></td>
+  </tr>
+</table>
