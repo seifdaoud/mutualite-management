@@ -1,0 +1,9 @@
+<div>
+  <h2>Consentements</h2>
+  <ul>
+    <li *ngFor="let consentement of consentements">
+      {{ consentement.typeConsentement }} - {{ consentement.dateConsentement }}
+      <button (click)="revokeConsent(consentement.idConsentement)">Révoquer</button>
+    </li>
+  </ul>
+</div>
